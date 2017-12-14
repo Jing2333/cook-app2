@@ -1,0 +1,45 @@
+[{
+  "nom":"Crêpes",
+  "description":"Une très vieille recette que j’avais publiée au tout début de mon blog en 2005 et qui avait disparu malencontreusement pendant le transfert de mon blog. Un des mystères mystérieux ^_^ de l’informatique.",
+  "tempsDeCuisson":15,
+  "nbDePersonnes": 6,
+  "images": [
+    "images/crepes.jpg"
+  ],
+  "ingrediants":[
+    "250g de farine",
+    "4 œufs",
+    "1/2 litre de lait",
+    "1 pincée de sel",
+    "2 sachets de sucre vanillé",
+    "1 cuillère à soupe de sucre en poudre",
+    "1 cuillère à soupe de Cognac (facultatif)"
+  ],
+  "reviews":[]
+},
+{
+  "nom":"gâteau au chocolat",
+  "description":"Gâteau au chocolat fondant rapide",
+  "tempsDeCuisson":40,
+  "nbDePersonnes":6,
+  "images":[
+      "images/gateauChoc.png"
+  ],
+  "ingrediants":[
+    "200g de chocolat",
+    "100g de beurre",
+    "3 oeufs",
+    "50g de farine",
+    "100g de sucre en poudre"
+  ],
+  "reviews":[],
+  "etapes":{
+    "1":"Préchauffez votre four à 180°C (thermostat 6)",
+    "2":"Dans une casserole, faites fondre le chocolat et le beurre coupé en morceaux à feu très doux. ",
+    "3":"Dans un saladier, ajoutez le sucre, les oeufs, la farine. Mélangez.",
+    "4":"Ajoutez le mélange chocolat/beurre. Mélangez bien. ",
+    "5":"Beurrez et farinez votre moule puis y versez la pâte à gâteau. ",
+    "6":"Faites cuire au four environ 20 minutes. ",
+    "7":"A la sortie du four le gâteau ne paraît pas assez cuit. C'est normal, laissez-le refroidir puis démoulez- le. "
+  }
+  }]

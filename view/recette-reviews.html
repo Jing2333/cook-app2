@@ -1,0 +1,39 @@
+<!--  Product Reviews List -->
+<ul>
+  <h4>Commentaires</h4>
+  <li ng-repeat="review in recette.reviews">
+    <blockquote>
+      <strong>{{review.stars}} Etoiles</strong>
+      {{review.body}}
+      <cite class="clearfix">—{{review.author}}</cite>
+    </blockquote>
+  </li>
+</ul>
+
+<!--  Review Form -->
+<form name="reviewForm" ng-controller="ReviewController as reviewCtrl" ng-submit="reviewCtrl.addReview(recette)">
+
+  <!--  Live Preview -->
+  <blockquote >
+    <strong>{{reviewCtrl.review.stars}} Etoiles</strong>
+    {{reviewCtrl.review.body}}
+    <cite class="clearfix">—{{reviewCtrl.review.author}}</cite>
+  </blockquote>
+
+  <!--  Review Form -->
+  <h5>soumettre un commentaire</h5>
+  <fieldset class="form-group">
+    <select ng-model="reviewCtrl.review.stars" class="form-control w3-theme-l3" ng-options="stars for stars in [5,4,3,2,1]" title="Etoiles">
+      <option value>Notez la recette</option>
+    </select>
+  </fieldset>
+  <fieldset class="form-group">
+    <textarea ng-model="reviewCtrl.review.body" class="form-control w3-theme-l3" placeholder="Commentaire..." title="Commentaires"></textarea>
+  </fieldset>
+  <fieldset class="form-group">
+    <input ng-model="reviewCtrl.review.author" type="email" class="form-control w3-theme-l3" placeholder="jimmyDean@example.org" title="Email" />
+  </fieldset>
+  <fieldset class="form-group">
+    <input type="submit" class="btn btn-primary pull-right w3-theme-l3" value="soumettre le commentaire" />
+  </fieldset>
+</form>

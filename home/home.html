@@ -1,0 +1,38 @@
+
+<div class="w3-margin" ng-controller="HomeController">
+  <div class="list-group w3-margin "  >
+      <!--  Product Container  -->
+      <div class="list-group-item w3-container w3-theme-l1" ng-repeat="recette in data.json" style="margin-top:100px">
+
+
+
+  <div class="w3-third  ">
+    <img src="{{recette.images[0]}}" style="width:100%;min-height:200px">
+  </div>
+
+  <div class="w3-twothird w3-container ">
+    <h1>{{recette.nom}}</h1>
+    <h2>temps de cuisson : {{recette.tempsDeCuisson}} minutes</h2>
+    <!-- Product Tabs  -->
+
+    <h5>{{recette.description}}</h5>
+
+
+  <button  ng-click="gotopage2()"
+    type="button" class="w3-btn w3-theme-d5 w3-round-small w3-margin">Plus de détails</button>
+
+
+</div>
+</div>
+</div>
+
+
+
+
+
+
+
+
+
+
+</div>
