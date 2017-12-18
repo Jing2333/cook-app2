@@ -10,8 +10,9 @@ myApp.config(function($stateProvider, $urlRouterProvider) {
        templateUrl: 'home/home.html'
     })
 
-    .state('page2', {
-       url: '/page2',
+    .state('detail', {
+      params:{"id":null},
+      url: '/home/:id',
        templateUrl: 'page2/page2.html'
     });
 
